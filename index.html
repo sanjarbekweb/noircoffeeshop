@@ -1,0 +1,131 @@
+<!-- ======================================== -->
+<!-- HTML DOCUMENT STRUCTURE -->
+<!-- ======================================== -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ======================================== -->
+  <!-- META TAGS AND TITLE -->
+  <!-- ======================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOIR | Premium Coffee Culture</title>
+
+  <!-- ======================================== -->
+  <!-- EXTERNAL STYLESHEETS -->
+  <!-- ======================================== -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+
+  <!-- ======================================== -->
+  <!-- CUSTOM STYLES -->
+  <!-- ======================================== -->
+  <style>
+    /* Lenis smooth scroll styles */
+    html.lenis {
+      height: auto;
+    }
+
+    .lenis.lenis-smooth {
+      scroll-behavior: auto !important;
+    }
+
+    .lenis.lenis-smooth [data-lenis-prevent] {
+      overscroll-behavior: contain;
+    }
+
+    .lenis.lenis-stopped {
+      overflow: hidden;
+    }
+
+    .lenis.lenis-scrolling iframe {
+      pointer-events: none;
+    }
+
+    /* Body styles */
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #000;
+      color: #fff;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .font-display {
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #000;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #222;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #444;
+    }
+
+    /* Reveal classes */
+    .reveal-char {
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    /* Tilt styling */
+    .tilt-card {
+      transform-style: preserve-3d;
+      transform: perspective(1000px);
+    }
+
+    .tilt-content {
+      transform: translateZ(50px);
+    }
+  </style>
+
+  <!-- ======================================== -->
+  <!-- IMPORT MAP FOR ESM MODULES -->
+  <!-- ======================================== -->
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "gsap": "https://esm.sh/gsap@3.12.5",
+    "gsap/ScrollTrigger": "https://esm.sh/gsap@3.12.5/ScrollTrigger",
+    "vanilla-tilt": "https://esm.sh/vanilla-tilt@1.8.1",
+    "lenis": "https://esm.sh/lenis@1.1.20",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "gsap/": "https://esm.sh/gsap@^3.14.2/"
+  }
+}
+</script>
+
+  <!-- ======================================== -->
+  <!-- CUSTOM CSS LINK -->
+  <!-- ======================================== -->
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<!-- ======================================== -->
+<!-- BODY AND ROOT ELEMENT -->
+<!-- ======================================== -->
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
