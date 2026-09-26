@@ -69,7 +69,20 @@ Inspired by the "X" (formerly Twitter) official UI style and high-end fashion ed
 
 ---
 
-## 🚀 Experience Philosophy
+## Run locally
+
+Use Node.js 22.12+ and run these commands from the repository root:
+
+```sh
+npm install
+npm run dev
+```
+
+Open `http://localhost:3000`, or the alternative URL printed by Vite. Use `npm run build` to generate `dist/` and `npm run preview` to preview the built site. Customize the sections in `components/` and global scrolling behavior in `App.tsx`.
+
+This is a frontend concept site. No order-processing backend is included, and the current page does not require a Gemini API key despite the inherited Vite environment definitions. No automated test script is configured.
+
+## Experience Philosophy
 
 > "We don't brew coffee. We engineer moments of absolute clarity."
 
